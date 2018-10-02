@@ -1,0 +1,17 @@
+.Head-bg-image{
+    background-image: url(./18.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+.Head-bg-image1{
+    background-image: url(./7.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+.Font{
+    font-family: 'Great Vibes', cursive;
+    font-family: 'Charmonman', cursive;
+}
+    
