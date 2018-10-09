@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>Usesname</title>
+    <style>
+    tr,th,td{
+        border: 1px solid black;
+    }
+    </style>
+</head>
+<body>
+<!-- <p> Duy Le</p>
+<p> Yuki</p>
+<button id="them">Them</button>
+ -->
+
+
+
+
+
+
+    <!-- CHEN elenmentchird  in father -->
+    <!-- <script>
+    //   var a = document.createElement("h1")  ;
+    //   var text = document.createTextNode("Duy Le");
+    //   a.appendChild(text);
+    //   document.body.appendChild(a);
+    //   var a= document.createElement("p");
+    //   var text = document.createTextNode("Bach Khoa");
+    //   a.appendChild(text);
+    //   document.body.appendChild(a);
+  
+    </script> -->
+
+<!-- <h1>Table</h1>
+<table id="table">
+    <thead>
+        <td>1</td>
+        <td>Name</td>
+        <td>Email</td>
+
+    </thead>
+    <tr>
+        <td>2</td>
+        <td>Duy Le</td>
+        <td>Duylebkdn@gmmail.com</td>
+    </tr>
+</table>
+<script>
+function Myfunction(){
+    var x = document.getElementById("table");
+} -->
+
+<!-- </script> -->
+<script src="jquery.js"></script>
+<div id="js-div-table"></div>
+
+<script>
+
+var table = '<table id ="js-table"></table>';
+$("#js-div-table").append(table);   
+
+
+var thead = '<thead id ="js-thead"></thead>';
+$(thead).appendTo("#js-table");   
+var tr = '<tr id ="js-tr-head"></tr>';
+$(tr).appendTo("#js-thead");   
+var th = '<th>#</th><th>Name</th><th>Email</th>';
+$(th).appendTo("#js-tr-head"); 
+
+
+var tbody ='<tbody id="t_body"></tbody>';
+$("#js-thead").after(tbody);
+var trbody = '<tr id ="js-trbody"></tr>';
+$(trbody).appendTo("#t_body");
+var thBody = '<th> 1 </th>';
+$(thBody).appendTo("#t_body");
+var tdBody = '<td>DuyLe</td><td>Duylebkdn@gmail.com</td>';
+$(tdBody).appendTo("#t_body");
+
+
+var trbody = '<tr id ="js-trbody"></tr>';
+$(trbody).appendTo("#t_body");
+var thBody = '<th> 2 </th>';
+$(thBody).appendTo("#t_body");
+var tdBody = '<td>YuKi</td><td>YuKibkdn@gmail.com</td>';
+$(tdBody).appendTo("#t_body");
+
+var trbody = '<tr id ="js-trbody"></tr>';
+$(trbody).appendTo("#t_body");
+var thBody = '<th> 3 </th>';
+$(thBody).appendTo("#t_body");
+var tdBody = '<td>Lien</td><td>Lienbkdn@gmail.com</td>';
+$(tdBody).appendTo("#t_body");
+
+
+</script>
+    
+    <!-- <script src="uses.js"></script>
+     -->
+</body>
+</html>

@@ -9,6 +9,21 @@
     <title>Album</title>
 </head>
 <body>
+    <div class="container-fluid text-white bg-dark ">
+        <div id="div1" class="row d-none Height-head1  " >
+          <div class="col-8 ">
+            <h4>About</h4>
+            <p>Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information.</p>
+          </div>
+          <div class="col-4">
+            <h4>Contact</h4>
+            <a href="#">Follow on Twitter</a>
+            <a href="#">Like on Facebook</a>
+            <a href="#">Email me</a>
+
+          </div>
+        </div>
+      </div>
         <div class="container-fluid Height-head text-white ">
             <div class="row h-100 bg-dark">
                 <div class="col-1">
@@ -20,12 +35,13 @@
                     
                 </div>
                 <div class="col-5 d-flex justify-content-end align-items-center">
-                        <i class="fas fa-bars Size-head"></i>
-
+                        <i id="js-icons" class="fas fa-bars Size-head"></i>
+                  
                 </div>
                
             </div>
         </div>
+        
         <div class="container ">
             <div class="row h-100">
                 <div class="col-3"></div>
@@ -155,5 +171,13 @@
                 </div>
             </div>
         </div>
+        <!-- <script >
+        function js-icons(){
+        var aDiv = document.getElementById("div1");
+        aDiv.classList.remove("js-display");
+}
+        </script> -->
+        <script src="jquery.js"></script>
+        <script src="js-album.js"></script>
 </body>
 </html>
