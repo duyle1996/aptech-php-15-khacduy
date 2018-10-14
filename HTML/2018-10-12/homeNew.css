@@ -1,0 +1,37 @@
+.Head-Bg-Image{
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.6)), url(./1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 270px;
+}
+.Head-Bg-Imagebody{
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.6)), url(./header.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.Head-height{
+height: 500px ;
+}
+.Head-height-image{
+    background-image: url(./2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.Head-Size{
+    font-size: 20px;
+}
+.ul{
+    list-style: none;
+
+}
+.Head-height-image1{
+    width: 540px;
+}
+.Head-Bg-Icons{
+    color: green;
+    font-size:40px; 
+}
