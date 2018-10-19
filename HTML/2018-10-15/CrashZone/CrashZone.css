@@ -1,0 +1,63 @@
+.TOP__Navigation__sizelogo {
+  width: 40px;
+  height: 40px;
+}
+
+.TOP__Navigation__ul {
+  list-style: none;
+}
+
+.TOP__Navigation__sizecolor {
+  font-size: 20px;
+}
+
+.MID__Carosel__color {
+  color: yellow;
+}
+
+.MID__Carosel--image1 {
+  background-image: url(./slide-1.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 50%;
+  background-size: cover;
+  height: 800px;
+}
+
+.MID__Carosel--image2 {
+  background-image: url(./sidle-2.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 50%;
+  background-size: cover;
+  height: 800px;
+}
+
+.MID__Carosel--image3 {
+  background-image: url(./sidle-3.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 50%;
+  background-size: cover;
+  height: 800px;
+}
+
+.MID__Carosel--image4 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.6))), url(./5.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url(./5.jpg);
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+}
+
+.MID__Carosel--button {
+  -webkit-transform: translate(-50%, 0%);
+          transform: translate(-50%, 0%);
+  left: 50%;
+  color: yellow;
+}
+
+.MID__Carosel--height {
+  height: 70px;
+}
+/*# sourceMappingURL=CrashZone.css.map */
