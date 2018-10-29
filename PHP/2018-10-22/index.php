@@ -14,7 +14,7 @@
   <table class="table">
   <thead>
     <tr>
-      <th scope="col">Type</th>
+      <th scope="col">#</th>
       <th>Price</th>
       <th>Size</th>
       <th>Ram</th>
