@@ -5,14 +5,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./bootstrap4.css">
+    <link rel="stylesheet" href="BS4.css">
 </head>
 
 <body>
     <div class="container">
     <div class="row" style="height:100vh">
             <div class="col-12 d-flex justify-content-center align-items-center">
-                <form class="d-flex flex-column align-items-center" action="conect.php" method="POST">
+                <form class="d-flex flex-column align-items-center" action="testsign.php" method="POST">
                     Email:<input class="mb-3" type="email" name="email" placeholder="Email">
 
                     Password: <input class="mb-3" type="password" name="password" placeholder="Password">
