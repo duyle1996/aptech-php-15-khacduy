@@ -7,7 +7,7 @@ class DatabaseSeeder extends Seeder
     {
         $faker = Faker::create();
         for ($i = 0; $i < 100; $i++) {
-            User::all()->insert([
+            DB::table('users')->insert([
                 'name' => $faker->username,
                 'email' => $faker->email,
                 'password' => $faker->password,

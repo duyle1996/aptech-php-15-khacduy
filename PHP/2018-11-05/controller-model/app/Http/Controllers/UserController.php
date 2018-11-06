@@ -26,9 +26,9 @@ class UserController extends Controller
      * @return \Illuminate\Http\Response
      */
     
-    public function create(Request $request)
+    public function create()
     {
-        
+     return view('create-users');   
     }
 
     /**
@@ -50,7 +50,9 @@ class UserController extends Controller
      */
     public function show($id)
     {
-        $users = User::all();
+        // $users = User::where('id', 1)->first();
+        $users = User::find($id);
+
 
         return view('show_users', ['users' => $users]);
     }
