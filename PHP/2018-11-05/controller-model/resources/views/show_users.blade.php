@@ -9,7 +9,10 @@
       <th scope="col" class="">Name</th>
       <th scope="col" class="">Email</th>
      <th scope="col" class="">Password</th>
-    <th scope="col" class="">Created Date</th>
+     <th scope="col" class="">Created Date</th>
+     <th scope="col" class="">Updated Date</th>
+
+    <th scope="col" class="">Action</th>
     
     </tr>
   </thead>
@@ -20,7 +23,10 @@
       <td>{{ $users->name }} </td>
       <td>{{ $users->email }}</td>
      <td>{{ $users->password }}</td>
-       
+     <td>{{ $users->created_at }}</td>
+     <td>{{ $users->updated_at }}</td>
+
+
          
       <td class="d-flex border-0 align-items-center justify-content-around">
         <form action="{{ $users->id.'/edit' }}" method="get"><button class="btn btn-sm btn-warning mx-2 rounded-0">Edit</button></form>

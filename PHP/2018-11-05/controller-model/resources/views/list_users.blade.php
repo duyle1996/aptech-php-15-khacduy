@@ -1,4 +1,14 @@
-@extends('header')
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    
+</head>
+<body>
+    @extends('header')
 @section('table')
 <table class="table table-bordered table-hover">
     <thead>
@@ -26,5 +36,18 @@
         @endforeach
     </tbody>
 </table>
-
+<div class="d-flex justify-content-center">
+        <ul class="pagination">
+            <li class="page-item"><a class="page-link" href="{{ $users->url(1) }}" rel="prev">Prev</a></li>
+    
+            @for ($i=1;$i<=$users->lastPage();$i++)
+                <li class="page-item @if ($users->currentPage()===$i) {{ 'active' }} @endif)">
+                    <a class="page-link" href="{{ $users->url($i) }}">{{ $i }}</a></li>
+                @endfor
+    
+                <li class="page-item"><a class="page-link" href="{{ $users->url($users->lastPage()) }}" rel="next">Next</a></li>
+        </ul>
+    </div
 @endsection
+</body>
+</html>

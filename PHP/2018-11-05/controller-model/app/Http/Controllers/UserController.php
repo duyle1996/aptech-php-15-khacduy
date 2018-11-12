@@ -15,7 +15,7 @@ class UserController extends Controller
      */
     public function index()
     {
-        $users =User::all() ;
+        $users  =User::paginate(10);
 
         return view('list_users', ['users' => $users]);
     }
@@ -39,7 +39,12 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $User = new User;
+        $User->name = $request->name;
+        $User->email = $request->email;
+        $User->password = $request->password;
+        $User->save();
+        return redirect('/');
     }
 
     /**
@@ -50,7 +55,6 @@ class UserController extends Controller
      */
     public function show($id)
     {
-        // $users = User::where('id', 1)->first();
         $users = User::find($id);
 
 
@@ -65,7 +69,8 @@ class UserController extends Controller
      */
     public function edit($id)
     {
-        //
+        $users = User::find($id);
+        return view('edit-users', ['users' => $users]);
     }
 
     /**
@@ -77,7 +82,11 @@ class UserController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $User = User::find($id);
+        $User->name = $request->name;
+        $User->email = $request->email;
+        $User->save();
+        return redirect('/');
     }
 
     /**
@@ -88,6 +97,7 @@ class UserController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $users = User::destroy($id);
+        return redirect('/');
     }
 }

@@ -19,7 +19,7 @@
             <button type="submit" class="btn btn-danger text-uppercase rounded-0 font-weight-bold">
               confirm
             </button>
-            {{ csrf_field() }}
+           {{ csrf_field() }}
           </div>
         </form>
 @endsection

@@ -10,13 +10,18 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+// route::get('create-user',function(){
+//     return view('create-users');
+//});
 
 Route::get('/', 'UserController@index');
-Route::get('{id}', 'UserController@show');
-Route::get('create-user', 'UserController@create');
 
-// Route::get('create-user', 'UserController@create');
-// Route::post('create-user', 'Controller@createUserButton');
+Route::get('{id}', 'UserController@show')->where('id', '[0-9]+');
+Route::get('create-user', 'UserController@create');
+route::post('create-user', 'UserController@store');
+Route::get('{id}/delete', 'UserController@destroy');
+Route::get('{id}/edit', 'UserController@edit');
+Route::post('{id}/edit', 'UserController@update');
 
 
 
